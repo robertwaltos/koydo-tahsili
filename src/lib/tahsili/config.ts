@@ -1,0 +1,45 @@
+// Tahsili Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM127",
+  slug: "tahsili",
+  name: "Tahsili",
+  fullName: "SAAT Saudi",
+  alias: "SAAT Saudi",
+  family: "Qiyas",
+  category: "Admissions",
+  subcategory: "Science admissions",
+  country: "Saudi Arabia",
+  region: "MENA",
+  languages: ["Arabic","English"],
+  estimatedAnnualTakers: "high",
+  testingWindow: "May-Jun",
+  schedulePattern: "Annual",
+  ageGroup: "16-22",
+  targetUser: "University applicant",
+  delivery: "Computer/paper",
+  questionTypes: ["MCQ"],
+  adaptivity: "Linear",
+  sections: "Science/math domains",
+  scoringMode: "Score-based",
+  essayOrSpeaking: "No",
+  ipRisk: "Low",
+  contentReuse: "science_admissions",
+  uiEngine: "timed_objective",
+  monetizationPotential: "Medium",
+  tier: "Tier 4",
+  launchWave: "Wave 6",
+  themeColor: "#1E40AF",
+  themeColorDark: "#1E3A8A",
+  localizationComplexity: "Medium",
+  offlineNeeded: false,
+  mobileFirst: true,
+  locale: "ar",
+  isRTL: true,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
